@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {View, Text, StyleSheet} from 'react-native'
 
 
+
 export const ComplementoScreen = () => {
+
   return (
-    <View style={styles.container}>
-        <Text style={styles.title}>Complemento: </Text>
+    <Provider>
+<View style={styles.container}>
+
     </View>
+    </Provider>
+    
   )
 }
 
@@ -14,7 +19,6 @@ const styles = StyleSheet.create({
 
   container: {
       flex: 1, 
-      backgroundColor: 'aqua',
       padding: 10,
   },
   title: {

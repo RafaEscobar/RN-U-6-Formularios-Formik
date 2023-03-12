@@ -15,10 +15,10 @@ export const BottomTabsNavigator = () => {
                     let myIcon='';
                     switch (route.name) {
                         case 'InicioScreen':
-                            myIcon: 'alarm-outline';
+                            myIcon= 'attach-outline';
                         break;
                         case 'ComplementoScreen':
-                            myIcon: 'alarm-outline';
+                            myIcon= 'apps-outline';
                         break;
                     
                         default:

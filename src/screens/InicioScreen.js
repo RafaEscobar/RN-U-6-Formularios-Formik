@@ -1,18 +1,19 @@
 import React, {useState} from 'react'
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 import { useFormik } from 'formik';
-import { Input, Stack, FormControl, Button } from 'native-base';
+import { Input, Stack, FormControl } from 'native-base';
 import {
   Provider,
   Dialog,
   DialogHeader,
+  Button,
 } from "@react-native-material/core";
 
 export const InicioScreen = () => {
   const [visible, setVisible] = useState(false);
   const [cont, setCont] = useState();
 
-    const {values, isSubmitting, setFieldValue, handleSubmit} = useFormik({
+    const {values, setFieldValue, handleSubmit} = useFormik({
         initialValues: {
           nombre: '',
           carrera: '',
